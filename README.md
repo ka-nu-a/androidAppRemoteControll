@@ -15,6 +15,13 @@ Android App on your PC can be Controlled by others through Web browser. (Like Ge
 - [ADB](https://developer.android.com/studio/releases/platform-tools)
 
 ## Usage
+### ADB Startup
+```
+$ adb start-server
+PS: netsh interface portproxy add v4tov4 listenport=5037 listenaddr=0.0.0.0 connectport=5037 connectaddr=127.0.0.1
+```
+
+### Server Startup.
 ```
 $ docker run --name skyway-gw -d -p 8000:8000 -p 50001-50020:50001-50020/udp gateway-image
 $ export SKYWAY_API_KEY="your api key"
@@ -22,6 +29,15 @@ $ export PORT="8080"
 $ cd reciever
 $ npm start
 ```
+
+### Streamer (you)
+	1. Aceess to YOUR_HOST/stream.html
+	2. Push start button.
+	3. Choose app window to stream.
+
+### Operator (guest)
+	1. Acess to YOUR_HOST/index.html
+	2. Click or tap stream video, can controll remote app.
 
 ## Install
 ```
