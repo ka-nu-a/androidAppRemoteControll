@@ -6,6 +6,9 @@ Android App on your PC can be Controlled by others through Web browser. (Like Ge
 - Very low latency by WebRTC(wrapped by SkyWay).
 - It works even if the target application is not at the foreground.
 
+## System Requirement
+Windows Subsystem for Linux2 (WSL2)
+
 ## Requirement
 - [Skyway API Key](https://console-webrtc-free.ecl.ntt.com/users/registration)
 - [Skyway Gateway](https://github.com/skyway/skyway-webrtc-gateway/releases)
@@ -31,13 +34,13 @@ $ npm start
 ```
 
 ### Streamer (you)
-	1. Aceess to YOUR_HOST/stream.html
-	2. Push start button.
-	3. Choose app window to stream.
+1. Aceess to YOUR_HOST/stream.html
+2. Push start button.
+3. Choose app window to stream.
 
 ### Operator (guest)
-	1. Acess to YOUR_HOST/index.html
-	2. Click or tap stream video, can controll remote app.
+1. Acess to YOUR_HOST/index.html
+2. Click or tap stream video, can controll remote app.
 
 ## Install
 ```
